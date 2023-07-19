@@ -103,6 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .inner-play {
@@ -119,6 +120,9 @@
     justify-content:center ;
     align-content: center;
     gap: 1rem;
+    background-image: url(../images/Group.png);
+    background-position: center;
+    background-size:cover ;
 }
 
 .play-left h1 {
@@ -138,7 +142,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 2rem;   
+    gap: 1rem;   
 }
 
 .play-btn :hover {
@@ -147,10 +151,11 @@
 }
 
 .play-btn button {
-    padding: 6px 12px ;
+    padding: 10px 16px ;
     background-color: #8758FB;
     color: #fff;
     border-radius: 8px;
+    letter-spacing: 1px;
 }
 
 .play-right {
@@ -192,6 +197,7 @@
 
 .funny-video-write p {
     font-size: small;
+    transition: all 0.3s ease-in;
 }
 
 .funny-video {
@@ -200,6 +206,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease-in;
 }
 
 .funny-video-img {
@@ -208,7 +215,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    transition: all 0.3s ease-in;
 }
 
 .video-img-list {
@@ -219,18 +226,33 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
+    transition: all 0.3s ease-in;
 }
+
+.video-img-list :hover {
+        
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: all 0.3s ease-out;
+
+
+   }
+
 
 .img-list {
     width: 100%;
+    transition: all 0.3s ease-in;
 }
 
 .video-img-list p {
     font-size: small;
+    transition: all 0.3s ease-in;
 }
 
 .img-list img {
     width: 100%;
+    transition: all 0.3s ease-in;
 }
 
 /* Online game start */
@@ -309,7 +331,7 @@
 /*------------------------ game list one--------------- */
 
 .game-list-one {
-    height: 14vh;
+    height: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -402,6 +424,7 @@
 /* ------------------------------ */
 
 .footer-icon {
+    transform: scale(2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,25 +435,24 @@
 
 .footer-talk  {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     gap: 2rem;
     color: #fff;
-}
-
-
-
-
-.footer-talk {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    text-align: center;
 }
 
 .footer-talk p {
     font-size: small;
+    text-align: center;
 }
 
+.footer-copy-right{
+    text-align: center;
+    font-size: smaller;
+    color: #dadada;
+    letter-spacing: 1px;
+}
 
 
 
@@ -468,6 +490,12 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .play-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* ------------------ funny video ----------------- */
@@ -512,6 +540,7 @@
         align-content: center; 
     }
 
+    
     .img-list {
         width: 90%;
     }
