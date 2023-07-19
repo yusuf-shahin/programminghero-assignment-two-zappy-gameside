@@ -1,0 +1,510 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --pink: #F12E90 ;
+    --violate: #8758FB ;
+    --linear-g: linear-gradient(100deg, #F12E90 0%, #8758FB 100%);
+    --linear-g2:linear-gradient(90deg, #8758FB 0%, #F12E90 100%) ;
+    --font-m: 2rem ;
+    --font-s: 1.4rem ;
+    --font-l: 4.3rem ;
+
+}
+
+.header {
+    margin-bottom: 6vh;
+}
+
+.navbar {
+    height: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.7rem; */
+}
+
+.nav-title:hover {
+    cursor: pointer;
+}
+
+.nav-title h1 {
+    font-size: 30px;
+}
+
+.nav-title h1 span {
+    animation-name: color_change;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes color_change {
+	from { color: var(--violate); }
+	to { color: var(--pink); }
+}
+
+.nav-title-img {
+    width: 40%;
+}
+
+.nav-title-img img {
+    width: 80%;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-ul li a {
+    color: #000;
+}
+
+.nav-ul li a:hover {
+    color: #8758FB;
+}
+
+.shade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 9px ;
+    background-color: #dadada;
+    border-radius: 8px;
+}
+
+
+/* Play Start */
+
+.play {
+    height: 90vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-play {
+    height: 100%;
+    width: 85%;
+    display: flex;
+}
+
+.play-left {
+    height:100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-content: center;
+    gap: 1rem;
+}
+
+.play-left h1 {
+    font-size: var(--font-l) ;
+    letter-spacing: 1px;
+    background: var(--linear-g);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-left h2 {
+    font-size: var(--font-m);
+}
+
+.play-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items:flex-end ;
+
+}
+.inner-play-img {
+    width: 100%;
+}
+
+.inner-play-img img {
+    width: 100%;
+}
+
+/* Funny video */
+
+.funny-video-write {
+    height: 10vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 8vh;
+}
+
+.funny-video-write h2 {
+ font-size: var(--font-m) ;
+}
+.funny-video-write .span {
+    background: var(--linear-g2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.funny-video-write p {
+    font-size: small;
+}
+
+.funny-video {
+    height: 60vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.funny-video-img {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.video-img-list {
+    height:100% ;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.img-list {
+    width: 100%;
+}
+
+.video-img-list p {
+    font-size: small;
+}
+
+.img-list img {
+    width: 100%;
+}
+
+/* Online game start */
+
+.online-game {
+    height: 80vh;
+    width: auto;
+    padding: 0 8%;    
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+.inner-online-game {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.inner-online-game-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online-game-img {
+    width: 70%;
+    height: 74%;
+}
+
+.online-game-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-online-game-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1.8rem;
+    padding-right: 15%;
+}
+
+.inner-online-game-right h1 {
+    font-size: var(--font-m);
+}
+
+.inner-online-game-right h1 span {
+    background: var(--linear-g2);
+    background-clip: text;
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;  
+}
+
+.inside-box {
+    /* height: 17%; */
+    width: 13%;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    border: 3px solid #fff;
+}
+
+.inside-box-img {
+    width: 100%;
+}
+
+.inside-box-img img {
+    width: 100%;
+}
+
+/* game list one */
+
+.game-list-one {
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-one {
+    width: 18% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-img {
+    width: 13%;
+}
+
+.list-one img {
+    width: 100%;
+}
+
+/* Footer Start */
+
+.footer {
+    height: 68vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000020;
+    color: #fff;
+}
+
+.inner-footer {
+    height: 70%;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-games {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.footer-game-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.7rem; */
+}
+
+.footer-game-pic h1 {
+    font-size: 30px;
+}
+
+.footer-game-pic span {
+    color: var(--pink);
+}
+
+.footer-game-image {
+    width: 40%;
+}
+
+.footer-game-image img {
+    width: 80%;
+}
+
+
+.footer-talk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-talk p {
+    font-size: small;
+}
+
+
+/* ----------- Media Query Start -------------------- */
+
+
+@media screen and (max-width:576px) {
+    
+    
+    .navbar {
+        height: 30vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* gap: 0.7rem; */
+        padding: 0 2%;
+        background: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* ------------------ funny video ----------------- */
+
+    .funny-video {
+        height: 200vh;
+    }
+
+    .inner-play {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 0.7rem; */
+
+    }
+
+    .play-left {
+        width: 90%;
+        text-align: center;
+    }
+
+    .play-right {
+        width: 100%;
+    }
+
+
+    .funny-video-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1%;
+        gap: 2.3rem;
+        
+
+    }
+
+    .video-img-list {
+        width: 91%;
+        display: flex;
+        justify-content: center;
+        align-content: center; 
+    }
+
+    .img-list {
+        width: 90%;
+    }
+
+    /* --------------- online game -------------- */
+
+
+    .online-game {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+    }
+
+
+    .inner-online-game {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+
+    .inner-online-game-left {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .online-game-img {
+        height: 80%;
+        width: 90%;
+    }
+
+    .inside-box {
+        width: 32%;
+        left: 62%;
+        bottom: 0%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .inside-box-img {
+        
+        
+    }
+
+    .inner-online-game-right {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+
+    
+
+    
+}
