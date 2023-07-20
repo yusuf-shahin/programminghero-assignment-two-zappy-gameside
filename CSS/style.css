@@ -49,17 +49,6 @@
     font-size: 30px;
 }
 
-/* .nav-title h1 span {
-    animation-name: color_change;
-	animation-duration: 0.3s;
-	animation-iteration-count: infinite;
-
-}
-
-@keyframes color_change {
-	from { color: var(--violate); }
-	to { color: var(--pink); }
-} */
 
 .nav-title-img {
     width: 40%;
@@ -77,11 +66,11 @@
 }
 
 .nav-ul li a {
-    color: #000;
+    color: var(--violate);
 }
 
 .nav-ul li a:hover {
-    color: #8758FB;
+    color: var(--pink);
 }
 
 .shade {
@@ -126,16 +115,23 @@
 }
 
 .play-left h1 {
-    font-size: var(--font-l) ;
+    font-size: 5.6rem ;
     letter-spacing: 1px;
-    background: var(--linear-g);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation-name: color_change;
+	animation-duration: 0.3s;
+	animation-iteration-count: infinite;
+
 }
 
+@keyframes color_change {
+	from { color: var(--violate); }
+	to { color: var(--pink); }
+} 
+
+
+
 .play-left h2 {
-    font-size: var(--font-m);
+    font-size: 3.4rem;
 }
 
 .play-btn  {
@@ -182,7 +178,8 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
+
 }
 
 .funny-video-write h2 {
@@ -197,8 +194,10 @@
 
 .funny-video-write p {
     font-size: small;
-    transition: all 0.3s ease-in;
+    /* transition: all 0.3s ease-in; */
 }
+
+
 
 .funny-video {
     height: 60vh;
@@ -468,20 +467,22 @@
 /* ----------- Media Query Start -------------------- */
 
 
-@media screen and (max-width:516px) {
+@media screen and (max-width:570px) {
     
     
     .navbar {
-        height: 30vh;
+        margin-top: 3%;
+        height: 32vh;
         width: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        /* gap: 0.7rem; */
+        gap: 0.7rem;
         padding: 0 2%;
         background: #FFF;
-        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+        box-shadow: none;
+        margin-bottom: 3vh;
     }
 
     .nav-ul {
@@ -498,10 +499,34 @@
         align-items: center;
     }
 
+    .play {
+        height: 100vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+
+
     /* ------------------ funny video ----------------- */
 
+    .funny-video-write {
+        height: 6vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 6vh;
+    
+    }
+    
+
     .funny-video {
-        height: 200vh;
+        height: 300vh;
     }
 
     .inner-play {
